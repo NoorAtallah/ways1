@@ -33,7 +33,7 @@ export default function Footer() {
           color: "var(--cream)",
         }}
       >
-        Swift<span style={{ color: "var(--teal)" }}>Move</span>
+        Easy<span style={{ color: "var(--teal)" }}>Way</span>
       </div>
 
       {/* Links */}
@@ -70,7 +70,7 @@ export default function Footer() {
           letterSpacing: "0.06em",
         }}
       >
-        &copy; {new Date().getFullYear()} SwiftMove Inc. All rights reserved.
+        &copy; {new Date().getFullYear()} EasyWay Inc. All rights reserved.
       </div>
     </footer>
   );

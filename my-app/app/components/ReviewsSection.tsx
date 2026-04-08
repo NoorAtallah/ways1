@@ -386,6 +386,7 @@ export default function ReviewsSection() {
         }}
       >
         Drag to scroll
+      </p>
     </section>
   );
 }

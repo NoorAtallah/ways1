@@ -57,7 +57,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
         display: "block",
       }}
     >
-      {/* Background image */}
       <div
         style={{
           position: "absolute",
@@ -71,7 +70,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
         className="service-card-img"
       />
 
-      {/* Glass overlay on hover */}
       <div
         style={{
           position: "absolute",
@@ -83,7 +81,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
         className="service-glass-layer"
       />
 
-      {/* Content */}
       <div
         style={{
           position: "relative",
@@ -95,7 +92,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
           padding: "34px 30px",
         }}
       >
-        {/* Big number */}
         <span
           className="service-num"
           style={{
@@ -112,7 +108,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
           {service.num}
         </span>
 
-        {/* Icon — glass pill */}
         <div
           className="service-icon-wrap"
           style={{
@@ -133,7 +128,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
           {service.icon}
         </div>
 
-        {/* Name */}
         <h3
           style={{
             fontFamily: "'Playfair Display', serif",
@@ -147,7 +141,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
           {service.name}
         </h3>
 
-        {/* Desc — reveals on hover */}
         <p
           className="service-desc"
           style={{
@@ -161,7 +154,6 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[0] }) {
           {service.desc}
         </p>
 
-        {/* Arrow */}
         <div
           className="service-arrow flex items-center gap-2 mt-5"
           style={{
@@ -274,6 +266,40 @@ export default function ServicesGrid() {
         {SERVICES.map((s) => (
           <ServiceCard key={s.num} service={s} />
         ))}
+      </div>
+
+      {/* View all services button */}
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "52px" }}>
+        <Link
+          href="/services"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "10px",
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: "0.78rem",
+            fontWeight: 500,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--dark)",
+            border: "1.5px solid var(--dark)",
+            padding: "15px 36px",
+            borderRadius: "3px",
+            textDecoration: "none",
+            transition: "background 0.3s, color 0.3s",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = "var(--dark)";
+            e.currentTarget.style.color = "var(--cream)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = "transparent";
+            e.currentTarget.style.color = "var(--dark)";
+          }}
+        >
+          View All Services
+          <ArrowRight size={14} />
+        </Link>
       </div>
     </section>
   );

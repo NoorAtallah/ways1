@@ -19,14 +19,10 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
         padding: scrolled ? "14px 52px" : "24px 52px",
-        background: scrolled
-          ? "rgba(26,46,53,0.55)"
-          : "transparent",
-        backdropFilter: scrolled ? "blur(20px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(20px)" : "none",
-        borderBottom: scrolled
-          ? "1px solid rgba(255,246,246,0.1)"
-          : "none",
+        background: "rgba(26,46,53,0.95)",
+        backdropFilter: "blur(20px)",
+        WebkitBackdropFilter: "blur(20px)",
+        borderBottom: "1px solid rgba(255,246,246,0.1)",
       }}
     >
       <div className="flex items-center justify-between">
@@ -92,7 +88,7 @@ export default function Navbar() {
         <div
           className="md:hidden mt-4 flex flex-col gap-4 p-6 rounded-lg"
           style={{
-            background: "rgba(26,46,53,0.75)",
+            background: "rgba(26,46,53,0.95)",
             backdropFilter: "blur(24px)",
             WebkitBackdropFilter: "blur(24px)",
             border: "1px solid rgba(255,246,246,0.12)",

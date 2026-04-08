@@ -7,7 +7,7 @@ const LINKS = [
   { label: "Landscaping", href: "/landscaping" },
   { label: "Cleaning", href: "/cleaning" },
   { label: "Pool Care", href: "/pool" },
-  { label: "Admin", href: "/admin" },
+  // { label: "Admin", href: "/admin" },
 ];
 
 export default function Footer() {

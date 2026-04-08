@@ -385,8 +385,7 @@ export default function ReviewsSection() {
           textTransform: "uppercase",
         }}
       >
-        Drag to scroll · Showing 4 &amp; 5 star reviews only
-      </p>
+        Drag to scroll
     </section>
   );
 }

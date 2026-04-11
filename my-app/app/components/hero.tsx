@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Home } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const SLIDES = [
   {
@@ -76,15 +76,15 @@ export default function HeroGrid() {
       style={{
         position: "relative",
         width: "100%",
-        height: "100vh",
-        minHeight: 560,
+        height: "calc(100vh - 72px)",
+        minHeight: 0,
         background: "#1a2e35",
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
         gridTemplateRows: "1fr 1fr",
         gap: 3,
         fontFamily: "'DM Sans', sans-serif",
-        marginTop: 90,
+        marginTop: "70px",
       }}
     >
       {SLIDES.map((slide) => (
@@ -273,28 +273,6 @@ export default function HeroGrid() {
           zIndex: 20,
         }}
       />
-
-      {/* Center badge */}
-      {/* <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          zIndex: 30,
-          width: 64,
-          height: 64,
-          background: "#1a2e35",
-          border: "2px solid rgba(140,199,196,0.4)",
-          borderRadius: "50%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          pointerEvents: "none",
-        }}
-      >
-        <Home size={26} color="rgba(140,199,196,0.8)" strokeWidth={1.5} />
-      </div> */}
     </section>
   );
 }

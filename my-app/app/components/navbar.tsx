@@ -47,7 +47,7 @@ export default function Navbar() {
     <nav
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        padding: scrolled ? "14px 52px" : "24px 52px",
+        padding: scrolled ? "8px 52px" : "14px 52px",
         background: "rgba(26,46,53,0.97)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
